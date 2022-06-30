@@ -3,16 +3,38 @@
 // VARIABLES
 //
 
+:root {
+  --black: #000;
+  --darkGray: #212121;
+  --gray: #666;
+  --lightGray: #eee;
+  --lightGray2: #ddd;
+  --white: #f9f9f9;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+
+    --black: #fff;
+    --darkGray: #d6d6d6;
+    --gray: #999;
+    --lightGray: #333;
+    --lightGray2: #626262;
+    --white: #191919;
+  }
+}
+
 // Colors
 $blue: #4183C4;
 
 // Grays
-$black: #000;
-$darkerGray: #222;
-$darkGray: #333;
-$gray: #666;
-$lightGray: #eee;
-$white: #fff;
+$black: var(--black);
+$darkGray: var(--darkGray);
+$gray: var(--gray);
+$lightGray: var(--lightGray);
+$lightGray2: var(--lightGray2);
+$white: var(--white);
 
 // Font stacks
 $helvetica: Helvetica, Arial, sans-serif;
